@@ -1,0 +1,126 @@
+body {
+	font-size: 12px;
+	font-family: "Trebuchet MS", "Arial";
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+#game_wrapper {
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 600px;
+}
+
+#level_title, #level_number {
+	border: 1px solid black;
+	height: 60px;
+	background-color: #222222;
+}
+
+#level_title {
+	line-height: 60px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#canvas_wrapper {
+	height: 180px;
+}
+#canvas {
+	background-color: white;
+}
+
+#level_number {
+	width: 550;
+	padding: 0 25px;
+}
+#level_number table {
+	padding: 20px 0 0 0;
+	border: none;
+}
+#level_number tbody {
+	border: none;
+}
+#level_number td {
+	width: 13px;
+	height: 14px;
+	padding: 0;
+	border-left: 4px solid #222;
+	border-right: 4px solid #222;
+	background-color: blue;
+}
+
+.selected {
+	background-image: url(on.png);
+}
+.unselected {
+	background-image: url(off.png);
+}
+
+#options_title {
+	text-align: right;
+	margin: 10px 0 3px 0;
+	padding: 0 5px;
+}
+#options_title:hover {
+	cursor: pointer;
+}
+
+#options_wrap {
+	display: none;
+	width: 350px;
+	float: right;
+	padding-bottom: 20px;
+}
+
+#options {
+	width: 350px;
+	background-color: #222;
+	padding: 10px;
+	text-align: left;
+}
+
+#op_table {
+	text-align: left;
+}
+#op_table tr td:last-child {
+	float: right;
+}
+.op_sec {
+	padding: 15px 0 5px 0;
+	border-bottom: 1px solid white;
+}
+
+#options label {
+	line-height: 25px;
+}
+
+#options input {
+	float: right;
+}
+
+#footer {
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	color: white;
+}
+
+#help_text {
+	display: none;
+	text-align: center;
+	background-color: #222;
+}
+
+#best_view {
+	text-align: center;
+}

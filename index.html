@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Impasse HTML5</title>
+	<link rel="stylesheet" href="impasse.css" />
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="impasse.js"></script>
+	<script src="levels.js"></script>
+	<script src="blur.js"></script>
+</head>
+<body onload="setup();">
+<audio id="a_move" src="move.wav" type="audio/wav"></audio>
+<h1>Impasse HTML5</h1>
+<div id="game_wrapper">
+	<div id="best_view">Best viewed in <a href="http://www.google.com/chrome/intl/de/landing_win.html">Google Chrome</a>!</div>
+	<div id="level_title"></div>
+	<div id="help_text"></div>
+	<div id="canvas_wrapper">
+		<canvas id="canvas" width="300" height="225">Your browser don't support canvas!</canvas>
+	</div>
+	<div id="level_number">
+		<table>
+			<tr>
+				<td id="lv_1"></td>
+				<td id="lv_2"></td>
+				<td id="lv_3"></td>
+				<td id="lv_4"></td>
+				<td id="lv_5"></td>
+				<td id="lv_6"></td>
+				<td id="lv_7"></td>
+				<td id="lv_8"></td>
+				<td id="lv_9"></td>
+				<td id="lv_10"></td>
+				<td id="lv_11"></td>
+				<td id="lv_12"></td>
+				<td id="lv_13"></td>
+				<td id="lv_14"></td>
+				<td id="lv_15"></td>
+				<td id="lv_16"></td>
+				<td id="lv_17"></td>
+				<td id="lv_18"></td>
+				<td id="lv_19"></td>
+				<td id="lv_20"></td>
+				<td id="lv_21"></td>
+				<td id="lv_22"></td>
+				<td id="lv_23"></td>
+				<td id="lv_24"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="options_title">Options</div>
+	<div id="options_wrap">
+	<table id="options">
+		<tr>
+			<th class="op_sec" colspan="2">General</th>
+		</tr>
+		<tr>
+			<td><label for="op_level">Level:</label></td>
+			<td><input id="op_level" type="number" min="1" max="24" step="1" value="1" /></td>
+		</tr>
+		<tr>
+			<th class="op_sec" colspan="2">Audio</th>
+		</tr>
+		<tr>
+			<td><label for="op_volume">Volume:</label></td>
+			<td><input id="op_volume" type="range" min="0" max="1" step="0.1"/></td>
+		</tr>
+		<tr>
+			<th class="op_sec" colspan="2">Animation</th>
+		</tr>
+		<tr>
+			<td><label for="op_animen">Enabled:</label></td>
+			<td><input id="op_animen" type="checkbox" checked /></td>
+		</tr>
+		<tr>
+			<td><label for="op_steps">Animation steps:</label></td>
+			<td><input id="op_steps" type="number" min="0" /></td>
+		</tr>
+		<tr>
+			<td><label for="op_delay">Delay between steps (ms):</label></td>
+			<td><input id="op_delay" type="number" min="0" /></td>
+		</tr>
+		<tr>
+			<td><label for="op_fade_setps">Fading steps:</label></td>
+			<td><input id="op_fade_steps" type="number" min="0" /></td>
+		</tr>
+		<tr>
+			<td><label for="op_fade_delay">Fading delay:</label></td>
+			<td><input id="op_fade_delay" type="number" min="0"/></td>
+		</tr>
+	</table>
+	</div>
+</div>
+<br/>
+<div id="footer">
+	<div id="like"></div>
+	<div id="comment">This is a HTML5 clone of the awesome game "Impasse" made by <a rel="author" href="https://profiles.google.com/u/0/106882731356835264519" target="_blank">Shylux</a>.</div>
+	<div id="original_link"><a href="http://www.bartbonte.com/portal/impasse.html" target="_blank">Original Flash Game by Wanderlands.</a></div>
+</div>
+</body>
+</html>
